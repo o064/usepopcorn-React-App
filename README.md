@@ -10,8 +10,7 @@
 **usePopcorn** is a sleek and interactive React application for searching and discovering movies. It leverages the OMDb API to provide users with up-to-date movie information, allowing you to browse, search, and track your favorite films with ease. Whether you’re a movie buff or just looking for something to watch, usePopcorn makes movie exploration simple and enjoyable.
 
 ---
-## Live Demo 
-- usepopcorn-react-app-orcin.vercel.app
+
 ---
 
 ## Features
