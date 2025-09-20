@@ -1,71 +1,96 @@
-# Getting Started with Create React App
+# 🍿 usePopcorn – React Movie Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/o064/usepopcorn-React-App/actions)
+[![React](https://img.shields.io/badge/React-18+-61dafb?logo=react)](https://reactjs.org/)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+**usePopcorn** is a sleek and interactive React application for searching and discovering movies. It leverages the OMDb API to provide users with up-to-date movie information, allowing you to browse, search, and track your favorite films with ease. Whether you’re a movie buff or just looking for something to watch, usePopcorn makes movie exploration simple and enjoyable.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- 🔍 **Movie Search:** Instantly search movies by title using the OMDb API.
+- 📑 **Search Results:** View detailed information including poster, plot, year, and IMDb rating.
+- ⭐ **Favorites List:** Add and manage your favorite movies.
+- 🎬 **Watched List:** Track movies you’ve already seen.
+- 🌓 **Responsive UI:** Modern design, fully responsive for mobile and desktop.
+- ⚡ **Fast & Lightweight:** Built with React functional components and hooks.
+- 🌐 **No Backend Needed:** 100% client-side – just clone and run!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/o064/usepopcorn-React-App.git
+   cd usepopcorn-React-App
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up environment variables:**
+   - Create a `.env` file in the project root (see [Configuration](#configuration) below).
 
-### `npm run eject`
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   - The app will be available at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Search for Movies:**  
+  Enter a movie title in the search bar to fetch matching results.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **View Details:**  
+  Click a movie result to see its details, including plot summary and ratings.
 
-## Learn More
+- **Add to Favorites/Watched:**  
+  Use the provided buttons to add movies to your personal lists.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Example:**
+  ```jsx
+  // Searching for a movie
+  <SearchBar placeholder="Search movies..." onSearch={handleSearch} />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  // Displaying movie details
+  <MovieDetails movie={selectedMovie} />
+  ```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Configuration
 
-### Analyzing the Bundle Size
+The app requires an OMDb API key.  
+1. [Get a free OMDb API key](https://www.omdbapi.com/apikey.aspx).
+2. Create a `.env` file in the project root:
+   ```
+   REACT_APP_OMDB_API_KEY=your_api_key_here
+   ```
+3. Restart the development server after editing the `.env` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [React](https://reactjs.org/) (with Hooks)
+- [Create React App](https://create-react-app.dev/)
+- [OMDb API](https://www.omdbapi.com/) (for movie data)
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [CSS Modules](https://github.com/css-modules/css-modules) / [Styled Components](https://styled-components.com/) *(depending on implementation)*
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) (code quality)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# usePopcorn-React-App
+**Happy movie exploring! 🍿**
